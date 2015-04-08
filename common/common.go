@@ -27,7 +27,7 @@ func ReadLinesOffset(filename string, offset int, n int) ([]string, error) {
 
 		res = append(res, strings.Trim(line, "\n"))
 	}
-	return ret, nil
+	return res, nil
 }
 
 func ReadLinesAll(filename string) ([]string, error) {
